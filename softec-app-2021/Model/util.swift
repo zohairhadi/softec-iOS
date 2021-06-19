@@ -131,3 +131,16 @@ public func migratingRealmSchema(){
     let realm = try! Realm()
 
 }
+
+///For converting messages xib time stamp
+func convertDateTimeFromTimeStamp(timestamp: Int) -> String {
+    //converting date
+    let epocTime = TimeInterval(timestamp)
+    let myDate = NSDate(timeIntervalSince1970: epocTime)
+
+    //formatting date
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM d, h:mm a"
+
+    return dateFormatter.string(from: myDate as Date)
+}

@@ -51,7 +51,7 @@ class BusinessRegisterViewController: UIViewController {
 //        }
 
         if (screenView.nameTextField.hasText && screenView.numberTextField.hasText && screenView.addressTextField.hasText && screenView.businessTextField.hasText) {
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BusinessHomeViewController") as? BusinessHomeViewController {
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BusinessTabBarViewController") as? UITabBarController {
 
                 //add code for forward data passing here
 
