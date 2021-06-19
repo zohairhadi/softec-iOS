@@ -10,7 +10,7 @@ class ProfileTypeViewController: UIViewController {
 
     //MARK:- Variables and Constants
     
-    private var isOldAdultSelected = false
+    private var isBusinessSelected = false
     private var isNextButtonPresented = false
     
     private let  titleLabel: UILabel = {
@@ -105,14 +105,14 @@ class ProfileTypeViewController: UIViewController {
     
     @objc func oldAdultButtonPressed(_ sender:UIButton!){
 //        currentTitle = Profile_Type.ELDERLY.rawValue
-        isOldAdultSelected = true
+        isBusinessSelected = true
         //add next button to subview if its not already added
         if !isNextButtonPresented {
             isNextButtonPresented = true
             configureNextButton()
         }
         //add the custom selected button effect
-        if isOldAdultSelected {
+        if isBusinessSelected {
             businessButton.layer.borderWidth = 2.5
             businessButton.layer.borderColor = UIColor.red.cgColor
             
@@ -123,14 +123,14 @@ class ProfileTypeViewController: UIViewController {
     }
     
     @objc func familyMemberButtonPressed(_ sender: UIButton!){
-        isOldAdultSelected = false
+        isBusinessSelected = false
         //add next button to subview if its not already added
         if !isNextButtonPresented {
             isNextButtonPresented = true
             configureNextButton()
         }
         //add the custom selected button effect
-        if !isOldAdultSelected {
+        if !isBusinessSelected {
             var selectedButton: UIButton!, selectedColor: CGColor!
             if sender == normalButton {
                 currentTitle = "FAMILY_MEMBER"
@@ -157,21 +157,21 @@ class ProfileTypeViewController: UIViewController {
         //set user profile type
         UserDefaults.standard.setValue(currentTitle, forKey: Constants.USER_DEFAULTS.PROFILE_TYPE)
         
-        if isOldAdultSelected == true {
-//            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OldAdultQRViewController") as? OldAdultQRViewController {
-//
-//                if let navigator = navigationController {
-//                    navigator.pushViewController(viewController, animated: true)
-//                }
-//            }
+        if isBusinessSelected == true {
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BusinessRegisterViewController") as? BusinessRegisterViewController {
+
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
 
         }else {
-//            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TermsViewController") as? TermsViewController {
-//
-//                if let navigator = navigationController {
-//                    navigator.pushViewController(viewController, animated: true)
-//                }
-//            }
+            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegularRegisterViewController") as? RegularRegisterViewController {
+
+                if let navigator = navigationController {
+                    navigator.pushViewController(viewController, animated: true)
+                }
+            }
         }
     }
     

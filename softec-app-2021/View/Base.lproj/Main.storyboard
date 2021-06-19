@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHJ-px-Fic">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="diH-LE-oaB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1745" y="76"/>
         </scene>
-        <!--View Controller-->
+        <!--Regular Register View Controller-->
         <scene sceneID="R4L-5h-fwI">
             <objects>
-                <viewController id="k15-OH-9rA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegularRegisterViewController" id="k15-OH-9rA" customClass="RegularRegisterViewController" customModule="softec_app_2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k50-ct-YJ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWA-EY-CYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2846" y="76"/>
+            <point key="canvasLocation" x="2903" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="flc-1e-4bz">
@@ -87,6 +87,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgr-eu-wZT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="726" y="-707"/>
+        </scene>
+        <!--Business Register View Controller-->
+        <scene sceneID="6IR-Kh-BIo">
+            <objects>
+                <viewController storyboardIdentifier="BusinessRegisterViewController" id="iJq-Wz-cox" customClass="BusinessRegisterViewController" customModule="softec_app_2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wI7-LG-Bdm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HaF-RH-iOn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHy-K5-JF9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2903" y="-343"/>
+        </scene>
+        <!--Regular Home View Controller-->
+        <scene sceneID="iCc-yk-veL">
+            <objects>
+                <viewController storyboardIdentifier="RegularHomeViewController" id="diH-LE-oaB" customClass="RegularHomeViewController" customModule="softec_app_2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yZh-UO-b2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YaO-oy-5Gm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wq5-Fj-3mz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4099" y="406"/>
+        </scene>
+        <!--Business Home View Controller-->
+        <scene sceneID="D7a-F4-CAF">
+            <objects>
+                <viewController storyboardIdentifier="BusinessHomeViewController" id="irq-pB-ECu" customClass="BusinessHomeViewController" customModule="softec_app_2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wkt-uJ-Del">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LIa-kP-DYV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GD4-bE-c1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4099" y="-344"/>
         </scene>
     </scenes>
     <resources>

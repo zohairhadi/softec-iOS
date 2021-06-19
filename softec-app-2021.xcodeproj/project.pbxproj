@@ -24,6 +24,16 @@
 		A53B8805267E29B600D9E908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8804267E29B600D9E908 /* UITextField.swift */; };
 		A53B8809267E2E0A00D9E908 /* RegularRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */; };
 		A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */; };
+		A53B8811267E35F500D9E908 /* RegularRegisterViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8810267E35F500D9E908 /* RegularRegisterViewController+.swift */; };
+		A53B8814267E397A00D9E908 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8813267E397A00D9E908 /* Validation.swift */; };
+		A53B8817267E3FE300D9E908 /* ModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8816267E3FE300D9E908 /* ModelEnum.swift */; };
+		A53B881D267E417D00D9E908 /* BusinessRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B881C267E417D00D9E908 /* BusinessRegisterViewController.swift */; };
+		A53B8822267E41A500D9E908 /* BusinessRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8821267E41A500D9E908 /* BusinessRegisterView.swift */; };
+		A53B8826267E41C500D9E908 /* BusinessHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8825267E41C500D9E908 /* BusinessHomeView.swift */; };
+		A53B882A267E41F300D9E908 /* BusinessRegisterViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8829267E41F300D9E908 /* BusinessRegisterViewController+.swift */; };
+		A53B882D267E423800D9E908 /* RegularHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B882C267E423800D9E908 /* RegularHomeView.swift */; };
+		A53B8830267E426400D9E908 /* RegularHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B882F267E426400D9E908 /* RegularHomeViewController.swift */; };
+		A53B883B267E42E200D9E908 /* BusinessHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B883A267E42E200D9E908 /* BusinessHomeViewController.swift */; };
 		A5816D99267DD7ED00FE3A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */; };
 		A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9A267DD7ED00FE3A33 /* SceneDelegate.swift */; };
 		A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9C267DD7ED00FE3A33 /* SignupViewController.swift */; };
@@ -51,6 +61,16 @@
 		A53B8804267E29B600D9E908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularRegisterViewController.swift; sourceTree = "<group>"; };
 		A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularRegisterView.swift; sourceTree = "<group>"; };
+		A53B8810267E35F500D9E908 /* RegularRegisterViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegularRegisterViewController+.swift"; sourceTree = "<group>"; };
+		A53B8813267E397A00D9E908 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		A53B8816267E3FE300D9E908 /* ModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEnum.swift; sourceTree = "<group>"; };
+		A53B881C267E417D00D9E908 /* BusinessRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRegisterViewController.swift; sourceTree = "<group>"; };
+		A53B8821267E41A500D9E908 /* BusinessRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRegisterView.swift; sourceTree = "<group>"; };
+		A53B8825267E41C500D9E908 /* BusinessHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHomeView.swift; sourceTree = "<group>"; };
+		A53B8829267E41F300D9E908 /* BusinessRegisterViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BusinessRegisterViewController+.swift"; sourceTree = "<group>"; };
+		A53B882C267E423800D9E908 /* RegularHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularHomeView.swift; sourceTree = "<group>"; };
+		A53B882F267E426400D9E908 /* RegularHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularHomeViewController.swift; sourceTree = "<group>"; };
+		A53B883A267E42E200D9E908 /* BusinessHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHomeViewController.swift; sourceTree = "<group>"; };
 		A5816D95267DD7ED00FE3A33 /* softec-app-2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "softec-app-2021.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5816D9A267DD7ED00FE3A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,20 +147,74 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
-		A53B8807267E2DE700D9E908 /* RegularRegister */ = {
+		A53B8807267E2DE700D9E908 /* Regular */ = {
 			isa = PBXGroup;
 			children = (
-				A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */,
+				A53B8832267E429D00D9E908 /* Register */,
+				A53B8834267E42AC00D9E908 /* Home */,
 			);
-			path = RegularRegister;
+			path = Regular;
 			sourceTree = "<group>";
 		};
-		A53B880B267E2E1900D9E908 /* RegularRegister */ = {
+		A53B880B267E2E1900D9E908 /* Regular */ = {
 			isa = PBXGroup;
 			children = (
 				A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */,
+				A53B882C267E423800D9E908 /* RegularHomeView.swift */,
 			);
-			path = RegularRegister;
+			path = Regular;
+			sourceTree = "<group>";
+		};
+		A53B881B267E412100D9E908 /* BusinessRegister */ = {
+			isa = PBXGroup;
+			children = (
+				A53B8839267E42CD00D9E908 /* Register */,
+				A53B8838267E42C400D9E908 /* Home */,
+			);
+			path = BusinessRegister;
+			sourceTree = "<group>";
+		};
+		A53B8820267E418E00D9E908 /* Busniess */ = {
+			isa = PBXGroup;
+			children = (
+				A53B8821267E41A500D9E908 /* BusinessRegisterView.swift */,
+				A53B8825267E41C500D9E908 /* BusinessHomeView.swift */,
+			);
+			path = Busniess;
+			sourceTree = "<group>";
+		};
+		A53B8832267E429D00D9E908 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */,
+				A53B8810267E35F500D9E908 /* RegularRegisterViewController+.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A53B8834267E42AC00D9E908 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A53B882F267E426400D9E908 /* RegularHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A53B8838267E42C400D9E908 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A53B883A267E42E200D9E908 /* BusinessHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A53B8839267E42CD00D9E908 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A53B881C267E417D00D9E908 /* BusinessRegisterViewController.swift */,
+				A53B8829267E41F300D9E908 /* BusinessRegisterViewController+.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		A5816D8C267DD7ED00FE3A33 = {
@@ -179,7 +253,8 @@
 		A5816DAE267DDA5700FE3A33 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A53B880B267E2E1900D9E908 /* RegularRegister */,
+				A53B8820267E418E00D9E908 /* Busniess */,
+				A53B880B267E2E1900D9E908 /* Regular */,
 				A53B87EE267E14D600D9E908 /* Signup */,
 				A5816D9E267DD7ED00FE3A33 /* Main.storyboard */,
 				A5816DA3267DD7EF00FE3A33 /* LaunchScreen.storyboard */,
@@ -190,10 +265,11 @@
 		A5816DAF267DDA6200FE3A33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A53B8807267E2DE700D9E908 /* RegularRegister */,
-				A53B87F9267E287000D9E908 /* OTP */,
-				A53B87F4267E238E00D9E908 /* ProfileType */,
 				A53B87E3267E131500D9E908 /* Signup */,
+				A53B87F4267E238E00D9E908 /* ProfileType */,
+				A53B87F9267E287000D9E908 /* OTP */,
+				A53B8807267E2DE700D9E908 /* Regular */,
+				A53B881B267E412100D9E908 /* BusinessRegister */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +282,8 @@
 				A53B877C267DE88800D9E908 /* Constants.swift */,
 				A53B87B4267E094600D9E908 /* Business.swift */,
 				A53B8804267E29B600D9E908 /* UITextField.swift */,
+				A53B8813267E397A00D9E908 /* Validation.swift */,
+				A53B8816267E3FE300D9E908 /* ModelEnum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,12 +430,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53B882D267E423800D9E908 /* RegularHomeView.swift in Sources */,
+				A53B8811267E35F500D9E908 /* RegularRegisterViewController+.swift in Sources */,
+				A53B881D267E417D00D9E908 /* BusinessRegisterViewController.swift in Sources */,
+				A53B8817267E3FE300D9E908 /* ModelEnum.swift in Sources */,
 				A53B877D267DE88800D9E908 /* Constants.swift in Sources */,
 				A53B8809267E2E0A00D9E908 /* RegularRegisterViewController.swift in Sources */,
 				A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */,
 				A53B87FB267E287C00D9E908 /* OTPViewController.swift in Sources */,
+				A53B882A267E41F300D9E908 /* BusinessRegisterViewController+.swift in Sources */,
 				A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */,
+				A53B883B267E42E200D9E908 /* BusinessHomeViewController.swift in Sources */,
 				A53B8805267E29B600D9E908 /* UITextField.swift in Sources */,
+				A53B8826267E41C500D9E908 /* BusinessHomeView.swift in Sources */,
+				A53B8830267E426400D9E908 /* RegularHomeViewController.swift in Sources */,
 				A53B8802267E28FD00D9E908 /* OTPViewController+.swift in Sources */,
 				A53B87EC267E148400D9E908 /* UIViewController+.swift in Sources */,
 				A5816D99267DD7ED00FE3A33 /* AppDelegate.swift in Sources */,
@@ -367,8 +453,10 @@
 				A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */,
 				A53B87E5267E132A00D9E908 /* PageVC.swift in Sources */,
 				A53B877A267DE7C700D9E908 /* util.swift in Sources */,
+				A53B8822267E41A500D9E908 /* BusinessRegisterView.swift in Sources */,
 				A53B87DF267E10B200D9E908 /* UIButton+.swift in Sources */,
 				A53B87F0267E14ED00D9E908 /* SignupView.swift in Sources */,
+				A53B8814267E397A00D9E908 /* Validation.swift in Sources */,
 				A53B87E9267E133B00D9E908 /* SignupViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

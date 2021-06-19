@@ -58,7 +58,9 @@ class SignupViewController: UIViewController {
     
     //MARK:- Helper Functions
     private func configureScreen(){
-        
+//        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.navigationBar.isHidden = true
+
         //configure page controller
         setupPageController()
 
