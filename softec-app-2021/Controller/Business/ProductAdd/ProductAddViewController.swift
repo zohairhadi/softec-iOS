@@ -1,10 +1,9 @@
 //
-//  RegularRegisterViewController.swift
+//  ProductAddViewController.swift
 //  softec-app-2021
 //
-//  Created by Zohair Hadi on 19/06/2021.
+//  Created by Zohair Hadi on 20/06/2021.
 //
-
 import UIKit
 
 class RegularRegisterViewController: UIViewController {

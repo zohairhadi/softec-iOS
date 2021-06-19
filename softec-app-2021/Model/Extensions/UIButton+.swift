@@ -28,6 +28,28 @@ class BigCustomButton : UIButton {
     }
 }
 
+//MARK:- Add Button
+class SmallCustomButton : UIButton {
+
+    required init(titleString : String, size: CGFloat) {
+        super.init(frame: .zero)
+        let titleColor = #colorLiteral(red: 0.5581660867, green: 0.4481821656, blue: 1, alpha: 1)
+        let textColor = UIColor.white
+        translatesAutoresizingMaskIntoConstraints = false
+        self.layer.cornerRadius = 15
+        backgroundColor = titleColor
+        setTitle(titleString, for: .normal)
+        setTitleColor(.white, for: .normal)
+        setTitleColor(textColor.withAlphaComponent(0.2), for: .highlighted)
+        self.titleLabel!.font = UIFont.boldSystemFont(ofSize: size)
+//        self.layer.borderColor = borderColor.cgColor
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
 //MARK:- Button extension
 extension UIButton {
     func pulsate() {
