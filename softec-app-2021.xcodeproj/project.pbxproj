@@ -12,9 +12,21 @@
 		A53B877D267DE88800D9E908 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B877C267DE88800D9E908 /* Constants.swift */; };
 		A53B87B1267E091100D9E908 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53B87B0267E091100D9E908 /* GoogleService-Info.plist */; };
 		A53B87B5267E094600D9E908 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87B4267E094600D9E908 /* Business.swift */; };
+		A53B87DF267E10B200D9E908 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87DE267E10B200D9E908 /* UIButton+.swift */; };
+		A53B87E5267E132A00D9E908 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87E4267E132A00D9E908 /* PageVC.swift */; };
+		A53B87E9267E133B00D9E908 /* SignupViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87E8267E133B00D9E908 /* SignupViewController+.swift */; };
+		A53B87EC267E148400D9E908 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87EB267E148400D9E908 /* UIViewController+.swift */; };
+		A53B87F0267E14ED00D9E908 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87EF267E14ED00D9E908 /* SignupView.swift */; };
+		A53B87F6267E239F00D9E908 /* ProfileTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87F5267E239F00D9E908 /* ProfileTypeViewController.swift */; };
+		A53B87FB267E287C00D9E908 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87FA267E287C00D9E908 /* OTPViewController.swift */; };
+		A53B87FF267E28D800D9E908 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B87FE267E28D800D9E908 /* UIStackView+.swift */; };
+		A53B8802267E28FD00D9E908 /* OTPViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8801267E28FD00D9E908 /* OTPViewController+.swift */; };
+		A53B8805267E29B600D9E908 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8804267E29B600D9E908 /* UITextField.swift */; };
+		A53B8809267E2E0A00D9E908 /* RegularRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */; };
+		A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */; };
 		A5816D99267DD7ED00FE3A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */; };
 		A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9A267DD7ED00FE3A33 /* SceneDelegate.swift */; };
-		A5816D9D267DD7ED00FE3A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9C267DD7ED00FE3A33 /* ViewController.swift */; };
+		A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9C267DD7ED00FE3A33 /* SignupViewController.swift */; };
 		A5816DA0267DD7ED00FE3A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5816D9E267DD7ED00FE3A33 /* Main.storyboard */; };
 		A5816DA2267DD7EF00FE3A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5816DA1267DD7EF00FE3A33 /* Assets.xcassets */; };
 		A5816DA5267DD7EF00FE3A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5816DA3267DD7EF00FE3A33 /* LaunchScreen.storyboard */; };
@@ -27,10 +39,22 @@
 		A53B877C267DE88800D9E908 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A53B87B0267E091100D9E908 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A53B87B4267E094600D9E908 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		A53B87DE267E10B200D9E908 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		A53B87E4267E132A00D9E908 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		A53B87E8267E133B00D9E908 /* SignupViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignupViewController+.swift"; sourceTree = "<group>"; };
+		A53B87EB267E148400D9E908 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		A53B87EF267E14ED00D9E908 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		A53B87F5267E239F00D9E908 /* ProfileTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTypeViewController.swift; sourceTree = "<group>"; };
+		A53B87FA267E287C00D9E908 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		A53B87FE267E28D800D9E908 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		A53B8801267E28FD00D9E908 /* OTPViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTPViewController+.swift"; sourceTree = "<group>"; };
+		A53B8804267E29B600D9E908 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularRegisterViewController.swift; sourceTree = "<group>"; };
+		A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularRegisterView.swift; sourceTree = "<group>"; };
 		A5816D95267DD7ED00FE3A33 /* softec-app-2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "softec-app-2021.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5816D9A267DD7ED00FE3A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5816D9C267DD7ED00FE3A33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5816D9C267DD7ED00FE3A33 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A5816D9F267DD7ED00FE3A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5816DA1267DD7EF00FE3A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5816DA4267DD7EF00FE3A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +80,67 @@
 				A174456D2619620CF02ECF6C /* Pods_softec_app_2021.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53B87DD267E10A100D9E908 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A53B87DE267E10B200D9E908 /* UIButton+.swift */,
+				A53B87EB267E148400D9E908 /* UIViewController+.swift */,
+				A53B87FE267E28D800D9E908 /* UIStackView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A53B87E3267E131500D9E908 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A5816D9C267DD7ED00FE3A33 /* SignupViewController.swift */,
+				A53B87E8267E133B00D9E908 /* SignupViewController+.swift */,
+				A53B87E4267E132A00D9E908 /* PageVC.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		A53B87EE267E14D600D9E908 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A53B87EF267E14ED00D9E908 /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		A53B87F4267E238E00D9E908 /* ProfileType */ = {
+			isa = PBXGroup;
+			children = (
+				A53B87F5267E239F00D9E908 /* ProfileTypeViewController.swift */,
+			);
+			path = ProfileType;
+			sourceTree = "<group>";
+		};
+		A53B87F9267E287000D9E908 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				A53B87FA267E287C00D9E908 /* OTPViewController.swift */,
+				A53B8801267E28FD00D9E908 /* OTPViewController+.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		A53B8807267E2DE700D9E908 /* RegularRegister */ = {
+			isa = PBXGroup;
+			children = (
+				A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */,
+			);
+			path = RegularRegister;
+			sourceTree = "<group>";
+		};
+		A53B880B267E2E1900D9E908 /* RegularRegister */ = {
+			isa = PBXGroup;
+			children = (
+				A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */,
+			);
+			path = RegularRegister;
 			sourceTree = "<group>";
 		};
 		A5816D8C267DD7ED00FE3A33 = {
@@ -94,6 +179,8 @@
 		A5816DAE267DDA5700FE3A33 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A53B880B267E2E1900D9E908 /* RegularRegister */,
+				A53B87EE267E14D600D9E908 /* Signup */,
 				A5816D9E267DD7ED00FE3A33 /* Main.storyboard */,
 				A5816DA3267DD7EF00FE3A33 /* LaunchScreen.storyboard */,
 			);
@@ -103,7 +190,10 @@
 		A5816DAF267DDA6200FE3A33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A5816D9C267DD7ED00FE3A33 /* ViewController.swift */,
+				A53B8807267E2DE700D9E908 /* RegularRegister */,
+				A53B87F9267E287000D9E908 /* OTP */,
+				A53B87F4267E238E00D9E908 /* ProfileType */,
+				A53B87E3267E131500D9E908 /* Signup */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,9 +201,11 @@
 		A5816DB0267DDA6B00FE3A33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A53B87DD267E10A100D9E908 /* Extensions */,
 				A53B8779267DE7C700D9E908 /* util.swift */,
 				A53B877C267DE88800D9E908 /* Constants.swift */,
 				A53B87B4267E094600D9E908 /* Business.swift */,
+				A53B8804267E29B600D9E908 /* UITextField.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,11 +353,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A53B877D267DE88800D9E908 /* Constants.swift in Sources */,
-				A5816D9D267DD7ED00FE3A33 /* ViewController.swift in Sources */,
+				A53B8809267E2E0A00D9E908 /* RegularRegisterViewController.swift in Sources */,
+				A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */,
+				A53B87FB267E287C00D9E908 /* OTPViewController.swift in Sources */,
+				A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */,
+				A53B8805267E29B600D9E908 /* UITextField.swift in Sources */,
+				A53B8802267E28FD00D9E908 /* OTPViewController+.swift in Sources */,
+				A53B87EC267E148400D9E908 /* UIViewController+.swift in Sources */,
 				A5816D99267DD7ED00FE3A33 /* AppDelegate.swift in Sources */,
+				A53B87F6267E239F00D9E908 /* ProfileTypeViewController.swift in Sources */,
 				A53B87B5267E094600D9E908 /* Business.swift in Sources */,
+				A53B87FF267E28D800D9E908 /* UIStackView+.swift in Sources */,
 				A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */,
+				A53B87E5267E132A00D9E908 /* PageVC.swift in Sources */,
 				A53B877A267DE7C700D9E908 /* util.swift in Sources */,
+				A53B87DF267E10B200D9E908 /* UIButton+.swift in Sources */,
+				A53B87F0267E14ED00D9E908 /* SignupView.swift in Sources */,
+				A53B87E9267E133B00D9E908 /* SignupViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

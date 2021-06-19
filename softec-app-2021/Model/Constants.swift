@@ -140,49 +140,49 @@ enum OptionsList: CaseIterable {
 }
 
 
-////scroll pages
-//enum Pages: CaseIterable {
-//    case pageZero
-//    case pageOne
-//    case pageTwo
-//    case pageThree
-//
-//    var descriptionLabel: String {
-//        switch self {
-//        case .pageZero:
-//            return "Create a family group to talk with your loved ones."
-//        case .pageOne:
-//            return "Add Family members and Caregivers."
-//        case .pageTwo:
-//            return "Share daily moments across all generations."
-//        case .pageThree:
-//            return "Help your Elderly, right from your phone."
-//        }
-//    }
-//
-//    var titleImage: UIImage {
-//        switch self {
-//        case .pageZero:
-//            return UIImage(named: "Carousel-Flower-1")!
-//        case .pageOne:
-//            return UIImage(named: "Carousel-Flower-2")!
-//        case .pageTwo:
-//            return UIImage(named: "Carousel-Flower-3")!
-//        case .pageThree:
-//            return UIImage(named: "Carousel-Flower-4")!
-//        }
-//    }
-//
-//    var index: Int {
-//        switch self {
-//        case .pageZero:
-//            return 0
-//        case .pageOne:
-//            return 1
-//        case .pageTwo:
-//            return 2
-//        case .pageThree:
-//            return 3
-//        }
-//    }
-//}
+//scroll pages
+enum Pages: CaseIterable {
+    case pageZero
+    case pageOne
+    case pageTwo
+    case pageThree
+
+    var descriptionLabel: String {
+        switch self {
+        case .pageZero:
+            return "Create a family group to talk with your loved ones."
+        case .pageOne:
+            return "Add Family members and Caregivers."
+        case .pageTwo:
+            return "Share daily moments across all generations."
+        case .pageThree:
+            return "Help your Elderly, right from your phone."
+        }
+    }
+
+    var titleImage: UIImage {
+        switch self {
+        case .pageZero:
+            return UIImage(named: "Carousel-Flower-1")!
+        case .pageOne:
+            return UIImage(named: "Carousel-Flower-2")!
+        case .pageTwo:
+            return UIImage(named: "Carousel-Flower-3")!
+        case .pageThree:
+            return UIImage(named: "Carousel-Flower-4")!
+        }
+    }
+
+    var index: Int {
+        switch self {
+        case .pageZero:
+            return 0
+        case .pageOne:
+            return 1
+        case .pageTwo:
+            return 2
+        case .pageThree:
+            return 3
+        }
+    }
+}
