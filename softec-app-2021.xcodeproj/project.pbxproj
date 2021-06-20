@@ -10,6 +10,16 @@
 		13765BF615D0020AD2BD0025 /* Pods_softec_app_2021.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A174456D2619620CF02ECF6C /* Pods_softec_app_2021.framework */; };
 		A530247D267EA08800976189 /* ProductAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530247C267EA08800976189 /* ProductAddViewController.swift */; };
 		A5302483267EA0FA00976189 /* ProductAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302482267EA0FA00976189 /* ProductAddView.swift */; };
+		A5302486267EA20A00976189 /* ProductAddViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302485267EA20A00976189 /* ProductAddViewController+.swift */; };
+		A530248A267EAD0000976189 /* RegularSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302489267EAD0000976189 /* RegularSearchViewController.swift */; };
+		A530248D267EAD2400976189 /* RegularSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530248C267EAD2400976189 /* RegularSearchView.swift */; };
+		A5302490267EADCF00976189 /* RegularSearchViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530248F267EADCF00976189 /* RegularSearchViewController+.swift */; };
+		A5302496267EB5B100976189 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302495267EB5B100976189 /* PlaceMarker.swift */; };
+		A530249A267ECDE100976189 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5302499267ECDE100976189 /* User.swift */; };
+		A530249E267ED0A300976189 /* RealmModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530249D267ED0A300976189 /* RealmModels.swift */; };
+		A53024A2267ED27700976189 /* UserDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024A1267ED27700976189 /* UserDBHandler.swift */; };
+		A53024A7267ED44F00976189 /* BusinessDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024A6267ED44F00976189 /* BusinessDBHandler.swift */; };
+		A53024AB267ED7A000976189 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024AA267ED7A000976189 /* UserDataModel.swift */; };
 		A53B877A267DE7C700D9E908 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8779267DE7C700D9E908 /* util.swift */; };
 		A53B877D267DE88800D9E908 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B877C267DE88800D9E908 /* Constants.swift */; };
 		A53B87B1267E091100D9E908 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53B87B0267E091100D9E908 /* GoogleService-Info.plist */; };
@@ -34,7 +44,6 @@
 		A53B8826267E41C500D9E908 /* BusinessCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8825267E41C500D9E908 /* BusinessCatalogView.swift */; };
 		A53B882A267E41F300D9E908 /* BusinessRegisterViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8829267E41F300D9E908 /* BusinessRegisterViewController+.swift */; };
 		A53B882D267E423800D9E908 /* RegularHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B882C267E423800D9E908 /* RegularHomeView.swift */; };
-		A53B8830267E426400D9E908 /* RegularHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B882F267E426400D9E908 /* RegularHomeViewController.swift */; };
 		A53B883B267E42E200D9E908 /* BusinessCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B883A267E42E200D9E908 /* BusinessCatalogViewController.swift */; };
 		A5816D99267DD7ED00FE3A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */; };
 		A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5816D9A267DD7ED00FE3A33 /* SceneDelegate.swift */; };
@@ -65,6 +74,16 @@
 		A174456D2619620CF02ECF6C /* Pods_softec_app_2021.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_softec_app_2021.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A530247C267EA08800976189 /* ProductAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAddViewController.swift; sourceTree = "<group>"; };
 		A5302482267EA0FA00976189 /* ProductAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAddView.swift; sourceTree = "<group>"; };
+		A5302485267EA20A00976189 /* ProductAddViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductAddViewController+.swift"; sourceTree = "<group>"; };
+		A5302489267EAD0000976189 /* RegularSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularSearchViewController.swift; sourceTree = "<group>"; };
+		A530248C267EAD2400976189 /* RegularSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularSearchView.swift; sourceTree = "<group>"; };
+		A530248F267EADCF00976189 /* RegularSearchViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegularSearchViewController+.swift"; sourceTree = "<group>"; };
+		A5302495267EB5B100976189 /* PlaceMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		A5302499267ECDE100976189 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A530249D267ED0A300976189 /* RealmModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModels.swift; sourceTree = "<group>"; };
+		A53024A1267ED27700976189 /* UserDBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBHandler.swift; sourceTree = "<group>"; };
+		A53024A6267ED44F00976189 /* BusinessDBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDBHandler.swift; sourceTree = "<group>"; };
+		A53024AA267ED7A000976189 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		A53B8779267DE7C700D9E908 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		A53B877C267DE88800D9E908 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A53B87B0267E091100D9E908 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -89,7 +108,6 @@
 		A53B8825267E41C500D9E908 /* BusinessCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCatalogView.swift; sourceTree = "<group>"; };
 		A53B8829267E41F300D9E908 /* BusinessRegisterViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BusinessRegisterViewController+.swift"; sourceTree = "<group>"; };
 		A53B882C267E423800D9E908 /* RegularHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularHomeView.swift; sourceTree = "<group>"; };
-		A53B882F267E426400D9E908 /* RegularHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularHomeViewController.swift; sourceTree = "<group>"; };
 		A53B883A267E42E200D9E908 /* BusinessCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCatalogViewController.swift; sourceTree = "<group>"; };
 		A5816D95267DD7ED00FE3A33 /* softec-app-2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "softec-app-2021.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5816D98267DD7ED00FE3A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,13 +160,49 @@
 			isa = PBXGroup;
 			children = (
 				A530247C267EA08800976189 /* ProductAddViewController.swift */,
+				A5302485267EA20A00976189 /* ProductAddViewController+.swift */,
 			);
 			path = ProductAdd;
+			sourceTree = "<group>";
+		};
+		A5302493267EB59600976189 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				A53B87B4267E094600D9E908 /* Business.swift */,
+				A5302499267ECDE100976189 /* User.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		A530249C267ED09300976189 /* Realm Modals */ = {
+			isa = PBXGroup;
+			children = (
+				A530249D267ED0A300976189 /* RealmModels.swift */,
+			);
+			path = "Realm Modals";
+			sourceTree = "<group>";
+		};
+		A53024A0267ED26800976189 /* Realm Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				A53024A1267ED27700976189 /* UserDBHandler.swift */,
+				A53024A6267ED44F00976189 /* BusinessDBHandler.swift */,
+			);
+			path = "Realm Handlers";
+			sourceTree = "<group>";
+		};
+		A53024A9267ED78500976189 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				A53024AA267ED7A000976189 /* UserDataModel.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		A53B87DD267E10A100D9E908 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A53B8804267E29B600D9E908 /* UITextField.swift */,
 				A53B87DE267E10B200D9E908 /* UIButton+.swift */,
 				A53B87EB267E148400D9E908 /* UIViewController+.swift */,
 				A53B87FE267E28D800D9E908 /* UIStackView+.swift */,
@@ -205,6 +259,7 @@
 			children = (
 				A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */,
 				A53B882C267E423800D9E908 /* RegularHomeView.swift */,
+				A530248C267EAD2400976189 /* RegularSearchView.swift */,
 			);
 			path = Regular;
 			sourceTree = "<group>";
@@ -243,7 +298,8 @@
 		A53B8834267E42AC00D9E908 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A53B882F267E426400D9E908 /* RegularHomeViewController.swift */,
+				A5302489267EAD0000976189 /* RegularSearchViewController.swift */,
+				A530248F267EADCF00976189 /* RegularSearchViewController+.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -327,12 +383,15 @@
 		A5816DB0267DDA6B00FE3A33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A53024A9267ED78500976189 /* Routing */,
+				A53024A0267ED26800976189 /* Realm Handlers */,
+				A530249C267ED09300976189 /* Realm Modals */,
 				A53B87DD267E10A100D9E908 /* Extensions */,
+				A5302493267EB59600976189 /* Modals */,
 				A53B8779267DE7C700D9E908 /* util.swift */,
 				A53B877C267DE88800D9E908 /* Constants.swift */,
-				A53B87B4267E094600D9E908 /* Business.swift */,
-				A53B8804267E29B600D9E908 /* UITextField.swift */,
 				A53B8813267E397A00D9E908 /* Validation.swift */,
+				A5302495267EB5B100976189 /* PlaceMarker.swift */,
 				A53B8816267E3FE300D9E908 /* ModelEnum.swift */,
 			);
 			path = Model;
@@ -577,12 +636,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A530249E267ED0A300976189 /* RealmModels.swift in Sources */,
+				A5302486267EA20A00976189 /* ProductAddViewController+.swift in Sources */,
 				A53B882D267E423800D9E908 /* RegularHomeView.swift in Sources */,
 				A53B8811267E35F500D9E908 /* RegularRegisterViewController+.swift in Sources */,
 				A53B881D267E417D00D9E908 /* BusinessRegisterViewController.swift in Sources */,
 				A53B8817267E3FE300D9E908 /* ModelEnum.swift in Sources */,
 				A5C4EA5D267E69C80028F115 /* BusinessCatalogViewController+.swift in Sources */,
 				A53B877D267DE88800D9E908 /* Constants.swift in Sources */,
+				A530248D267EAD2400976189 /* RegularSearchView.swift in Sources */,
 				A5302483267EA0FA00976189 /* ProductAddView.swift in Sources */,
 				A5C4EA83267E837B0028F115 /* OrderListTableViewCell.swift in Sources */,
 				A5C4EA4F267E67410028F115 /* CategoryCollectionViewCell.swift in Sources */,
@@ -590,14 +652,18 @@
 				A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */,
 				A53B87FB267E287C00D9E908 /* OTPViewController.swift in Sources */,
 				A5C4EA77267E81510028F115 /* OrderListViewController.swift in Sources */,
+				A5302496267EB5B100976189 /* PlaceMarker.swift in Sources */,
+				A53024AB267ED7A000976189 /* UserDataModel.swift in Sources */,
 				A5C4EA8C267E86DA0028F115 /* OrderListCollectionViewCell.swift in Sources */,
+				A530248A267EAD0000976189 /* RegularSearchViewController.swift in Sources */,
 				A53B882A267E41F300D9E908 /* BusinessRegisterViewController+.swift in Sources */,
 				A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */,
 				A53B883B267E42E200D9E908 /* BusinessCatalogViewController.swift in Sources */,
+				A53024A7267ED44F00976189 /* BusinessDBHandler.swift in Sources */,
 				A5C4EA70267E7D250028F115 /* FeedbackViewController.swift in Sources */,
+				A530249A267ECDE100976189 /* User.swift in Sources */,
 				A53B8805267E29B600D9E908 /* UITextField.swift in Sources */,
 				A53B8826267E41C500D9E908 /* BusinessCatalogView.swift in Sources */,
-				A53B8830267E426400D9E908 /* RegularHomeViewController.swift in Sources */,
 				A53B8802267E28FD00D9E908 /* OTPViewController+.swift in Sources */,
 				A5C4EA7B267E81D10028F115 /* OrderListViewController+.swift in Sources */,
 				A53B87EC267E148400D9E908 /* UIViewController+.swift in Sources */,
@@ -605,6 +671,7 @@
 				A53B87F6267E239F00D9E908 /* ProfileTypeViewController.swift in Sources */,
 				A53B87B5267E094600D9E908 /* Business.swift in Sources */,
 				A5C4EA7E267E82260028F115 /* OrderListView.swift in Sources */,
+				A53024A2267ED27700976189 /* UserDBHandler.swift in Sources */,
 				A53B87FF267E28D800D9E908 /* UIStackView+.swift in Sources */,
 				A5C4EA73267E7DEB0028F115 /* FeedbackViewController+.swift in Sources */,
 				A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */,
@@ -614,6 +681,7 @@
 				A53B8822267E41A500D9E908 /* BusinessRegisterView.swift in Sources */,
 				A530247D267EA08800976189 /* ProductAddViewController.swift in Sources */,
 				A53B87DF267E10B200D9E908 /* UIButton+.swift in Sources */,
+				A5302490267EADCF00976189 /* RegularSearchViewController+.swift in Sources */,
 				A53B87F0267E14ED00D9E908 /* SignupView.swift in Sources */,
 				A53B8814267E397A00D9E908 /* Validation.swift in Sources */,
 				A5C4EA63267E7A340028F115 /* FeedbackTableViewCell.swift in Sources */,
@@ -768,7 +836,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZG243XZTN;
 				INFOPLIST_FILE = "softec-app-2021/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,7 +857,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZG243XZTN;
 				INFOPLIST_FILE = "softec-app-2021/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,6 +9,7 @@ import UIKit
 import UserNotifications
 
 import GoogleSignIn
+import GoogleMaps
 
 import Realm
 import Stripe
@@ -23,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // add google maps
+        GMSServices.provideAPIKey("AIzaSyBXKx1LAKXjMTOX_Md9kic5xZVONOp7yl8")
+        
+        // add firebase
         FirebaseApp.configure()
         GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
         

@@ -66,6 +66,9 @@ struct Constants {
      *USER DEFAULTS
      */
     struct USER_DEFAULTS {
+        
+        static let SERVER_URL = "http://192.168.100.45:8090"
+        
         static let FCM_TOKEN = "FCM_TOKEN"
         static let REQUEST_ID = "REQUEST_ID"
         
@@ -85,7 +88,8 @@ struct Constants {
      */
     struct ROUTES {
         // USER AUTHENTICATION ROUTES
-
+        static let USER = "user"
+        static let BUSINESS = "business"
         
         // MESSAGES
         static let SEND_MESSAGE = "send_message"

@@ -76,6 +76,7 @@ class BusinessCatalogView: UIView {
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.isPagingEnabled = true
         
+        cv.isUserInteractionEnabled = true
         cv.backgroundColor = .clear
         let profileNib = UINib(nibName: "CategoryCollectionViewCell", bundle: nil)
         cv.register(profileNib, forCellWithReuseIdentifier: "CategoryCollectionViewCell")
@@ -93,6 +94,7 @@ class BusinessCatalogView: UIView {
         cv.translatesAutoresizingMaskIntoConstraints = false
 //        cv.isPagingEnabled = true
         
+        cv.isUserInteractionEnabled = true
         cv.backgroundColor = .clear
         let profileNib = UINib(nibName: "ProductCollectionViewCell", bundle: nil)
         cv.register(profileNib, forCellWithReuseIdentifier: "ProductCollectionViewCell")

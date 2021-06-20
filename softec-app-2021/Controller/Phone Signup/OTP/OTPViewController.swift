@@ -16,7 +16,7 @@ class OTPViewController: UIViewController{
         return v
     }()
     
-    private let  descriptionLabel: UILabel = {
+    private let descriptionLabel: UILabel = {
         let l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
         l.font = l.font.withSize(22)
@@ -35,7 +35,7 @@ class OTPViewController: UIViewController{
         view.frame = CGRect(x: 0, y: 0, width: 343, height: 337)
         view.backgroundColor = .white
 
-        view.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.24)
+        view.backgroundColor = #colorLiteral(red: 0.9620737433, green: 0.9129571319, blue: 0.9864124656, alpha: 1)
         view.layer.cornerRadius = 8
         return view
     }()
@@ -55,18 +55,18 @@ class OTPViewController: UIViewController{
     //MARK:- Helper Functions
     
     private func configureOTPTextField(){
-//        view.addSubview(otpContainerView)
-//        otpContainerView.heightAnchor.constraint(equalToConstant: 70).isActive = true
-//        otpContainerView.topAnchor.constraint(equalTo: titleImage.bottomAnchor, constant: 74).isActive = true
-//        otpContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 48).isActive = true
-//        otpContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48).isActive = true
-//
-//        view.addSubview(otpStackView)
-//        otpStackView.delegate = self
-//        otpStackView.heightAnchor.constraint(equalTo: otpContainerView.heightAnchor).isActive = true
-//        otpStackView.topAnchor.constraint(equalTo: titleImage.bottomAnchor, constant: 50).isActive = true
-//        otpStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-//        otpStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        view.addSubview(otpContainerView)
+        otpContainerView.heightAnchor.constraint(equalToConstant: 70).isActive = true
+        otpContainerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 94).isActive = true
+        otpContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 48).isActive = true
+        otpContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -48).isActive = true
+
+        view.addSubview(otpStackView)
+        otpStackView.delegate = self
+        otpStackView.heightAnchor.constraint(equalTo: otpContainerView.heightAnchor).isActive = true
+        otpStackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 70).isActive = true
+        otpStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        otpStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
         
     }
     
@@ -82,11 +82,11 @@ class OTPViewController: UIViewController{
         //configure otp text feild
         configureOTPTextField()
 
-//        view.addSubview(descriptionLabel)
-//        descriptionLabel.topAnchor.constraint(equalTo: otpContainerView.bottomAnchor, constant: 20).isActive = true
-//        descriptionLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
-//        descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
-//        descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
+        view.addSubview(descriptionLabel)
+        descriptionLabel.topAnchor.constraint(equalTo: otpContainerView.bottomAnchor, constant: 20).isActive = true
+        descriptionLabel.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+        descriptionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
     }
     
     func verifyOTP() {
@@ -105,8 +105,7 @@ class OTPViewController: UIViewController{
     
     private func pushHomeScreenVC(isProfileRestored: Bool, user: AuthDataResult){
         self.removeLoadingSpinner()
-        
-        if isProfileRestored {
+
             //present Home VCs
 //            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeScreenViewController") as? HomeScreenViewController {
 //
@@ -122,6 +121,6 @@ class OTPViewController: UIViewController{
 //                    navigator.pushViewController(viewController, animated: true)
 //                }
 //            }
-        }
     }
 }
+

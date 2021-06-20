@@ -11,10 +11,11 @@ class BusinessCatalogViewController: UIViewController {
 
     //MARK:- Variables and Constants
     @IBOutlet weak var searchBar: UISearchBar!
-    var screenView = BusinessCatalogView()
-
-    //MARK:- View Controller
     
+    var screenView = BusinessCatalogView()
+    var previousCat = IndexPath()
+    
+    //MARK:- View Controller
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +25,9 @@ class BusinessCatalogViewController: UIViewController {
     
     //MARK:- objc Functions
     @objc func prodButtonPressed(_ sender: UIButton!){
-        
+        self.present(ProductAddViewController(), animated: true) {
+            print("Presentation ended")
+        }
     }
     
     @objc func catButtonPressed(_ sender: UIButton!){
@@ -41,9 +44,9 @@ class BusinessCatalogViewController: UIViewController {
     
     //MARK:- Helper Functions
     private func configureScreen(){
-
+        self.view.backgroundColor = .white
         // configure screen
-        screenView.configureScreen(view: self.view, top: Float((searchBar.frame.height)))
+        screenView.configureScreen(view: self.view, top: 40)
         
         // set delegates
         screenView.categoryCollectionView.dataSource = self
@@ -55,6 +58,11 @@ class BusinessCatalogViewController: UIViewController {
         // configure outlets
         screenView.categoryAddButton.addTarget(self, action: #selector(catButtonPressed(_:)), for: .touchUpInside)
         screenView.productAddButton.addTarget(self, action: #selector(prodButtonPressed(_:)), for: .touchUpInside)
+        
+        if UserDefaults.standard.bool(forKey: "BusinessViaMap") == true {
+            screenView.productAddButton.isHidden = true
+            screenView.categoryAddButton.isHidden = true
+        }
     }
     
     private func configureAddCatPopupView(){

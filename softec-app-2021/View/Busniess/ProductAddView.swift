@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class BusinessRegisterView: UIView {
+class ProductAddView: UIView {
     
     private let transparentView: UIView = {
         var view = UIView()
@@ -17,7 +17,7 @@ class BusinessRegisterView: UIView {
         return view
     }()
     
-    var profilePicImageView: UIImageView = {
+    var picImageView: UIImageView = {
         let img = UIImageView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
         img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.masksToBounds = true
@@ -47,7 +47,7 @@ class BusinessRegisterView: UIView {
         var l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
         l.font = l.font.withSize(27)
-        l.text = NSLocalizedString("Registeration", comment: "Registeration")
+        l.text = NSLocalizedString("Add Product", comment: "Add Product")
         l.textAlignment = .center
         l.textColor = .white
         return l
@@ -62,7 +62,7 @@ class BusinessRegisterView: UIView {
         return tf
     }()
     
-    var numberTextField: PaddedTextFeild = {
+    var descTextField: PaddedTextFeild = {
         var tf = PaddedTextFeild()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = "Number"
@@ -71,7 +71,7 @@ class BusinessRegisterView: UIView {
         return tf
     }()
     
-    var addressTextField: PaddedTextFeild = {
+    var priceTextField: PaddedTextFeild = {
         var tf = PaddedTextFeild()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.placeholder = "Address"
@@ -80,21 +80,13 @@ class BusinessRegisterView: UIView {
         return tf
     }()
     
-    var businessTextField: PaddedTextFeild = {
-        var tf = PaddedTextFeild()
-        tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.placeholder = "Description"
-        tf.backgroundColor = #colorLiteral(red: 0.9620737433, green: 0.9129571319, blue: 0.9864124656, alpha: 1)
-        tf.layer.cornerRadius = 8
-        return tf
-    }()
-    
     var nextButton: BigCustomButton = {
         let button = BigCustomButton(titleString: NSLocalizedString("Register", comment: "Next"), size: 18)
-//        button.addTarget(self, action: #selector(nextButtonPressed(_:)), for: .touchUpInside)
+
         return button
     }()
     
+    //MARK:- Functions
     func configureScreen(view: UIView){
         view.addSubview(transparentView)
         transparentView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50).isActive = true
@@ -109,43 +101,37 @@ class BusinessRegisterView: UIView {
         titleLabel.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
         
         //add views to subview with constraints
-        transparentView.addSubview(profilePicImageView)
-        profilePicImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
-        profilePicImageView.centerXAnchor.constraint(equalTo: transparentView.centerXAnchor).isActive = true
-        profilePicImageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        profilePicImageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        transparentView.addSubview(picImageView)
+        picImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20).isActive = true
+        picImageView.centerXAnchor.constraint(equalTo: transparentView.centerXAnchor).isActive = true
+        picImageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
+        picImageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
 
         view.addSubview(cameraButton)
         cameraButton.layer.masksToBounds = false
         cameraButton.layer.cornerRadius = 45 / 2
-        cameraButton.topAnchor.constraint(equalTo: profilePicImageView.bottomAnchor, constant: -30).isActive = true
-        cameraButton.leadingAnchor.constraint(equalTo: profilePicImageView.trailingAnchor, constant: -20).isActive = true
+        cameraButton.topAnchor.constraint(equalTo: picImageView.bottomAnchor, constant: -30).isActive = true
+        cameraButton.leadingAnchor.constraint(equalTo: picImageView.trailingAnchor, constant: -20).isActive = true
         cameraButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
         cameraButton.widthAnchor.constraint(equalToConstant: 45).isActive = true
         
         transparentView.addSubview(nameTextField)
-        nameTextField.topAnchor.constraint(equalTo: profilePicImageView.bottomAnchor, constant: 20).isActive = true
+        nameTextField.topAnchor.constraint(equalTo: picImageView.bottomAnchor, constant: 20).isActive = true
         nameTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         nameTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
         nameTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
         
-        transparentView.addSubview(numberTextField)
-        numberTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 20).isActive = true
-        numberTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        numberTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
-        numberTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
+        transparentView.addSubview(descTextField)
+        descTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 20).isActive = true
+        descTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        descTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
+        descTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
         
-        transparentView.addSubview(addressTextField)
-        addressTextField.topAnchor.constraint(equalTo: numberTextField.bottomAnchor, constant: 20).isActive = true
-        addressTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        addressTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
-        addressTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
-        
-        transparentView.addSubview(businessTextField)
-        businessTextField.topAnchor.constraint(equalTo: addressTextField.bottomAnchor, constant: 20).isActive = true
-        businessTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        businessTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
-        businessTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
+        transparentView.addSubview(priceTextField)
+        priceTextField.topAnchor.constraint(equalTo: descTextField.bottomAnchor, constant: 20).isActive = true
+        priceTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        priceTextField.leadingAnchor.constraint(equalTo: transparentView.leadingAnchor, constant: 10).isActive = true
+        priceTextField.trailingAnchor.constraint(equalTo: transparentView.trailingAnchor, constant: -10).isActive = true
         
         transparentView.addSubview(nextButton)
         nextButton.bottomAnchor.constraint(equalTo: transparentView.bottomAnchor, constant: -20).isActive = true

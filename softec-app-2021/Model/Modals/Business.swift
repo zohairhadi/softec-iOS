@@ -12,8 +12,7 @@ enum BusinessProfileTypes: String {
     case PREMIUM = "PREMIUM"
 }
 
-class Business {
-    
+class Business: Codable {
     var businessId: String = ""
     var businessName: String = ""
     var businessDescription: String = ""
@@ -21,7 +20,7 @@ class Business {
     var businessAddress: String = ""
     var businessPhoneNumber: String = ""
     var isBusinessApproved: Bool = false
-    var businessProfileType: BusinessProfileTypes = .BASIC
+    var businessProfileType: String = BusinessProfileTypes.BASIC.rawValue
     
 //    enum CodingKeys: String CodingKey {
 //        case familyGroupId = "familyGroupId"
