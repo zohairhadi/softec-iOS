@@ -14,7 +14,7 @@ class BusinessDBHandler {
     let realm = try! Realm()
     var bus = RealmBusiness()
     
-    func saveFamilyBusiness(newBusiness: Business, profilePic:String){
+    func saveFamilyBusiness(newBusiness: Business, profilePic:String, pic: Data){
         bus = RealmBusiness()
         
         bus.businessId = newBusiness.businessId
@@ -25,6 +25,7 @@ class BusinessDBHandler {
         bus.businessPhoneNumber = newBusiness.businessPhoneNumber
         bus.isBusinessApproved = newBusiness.isBusinessApproved
         bus.businessProfileType = BusinessProfileTypes.BASIC.rawValue
+        bus.businessPic = pic
 
         //save member in elderly group
 //        self.selectedElderlyGroup.members.append(member)

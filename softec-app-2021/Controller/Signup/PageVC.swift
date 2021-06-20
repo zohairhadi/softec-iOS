@@ -13,7 +13,7 @@ class PageVC: UIViewController {
     var descriptionLabel: UILabel = {
         var l = UILabel()
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.text = NSLocalizedString("Create a Family Group to talk to your loved ones.", comment: "Create a Family Group to talk to your loved ones.")
+        l.text = NSLocalizedString("Find more people with ease now", comment: "Find more people with ease now")
         if #available(iOS 13.0, *) {
             l.textColor = .label
         }

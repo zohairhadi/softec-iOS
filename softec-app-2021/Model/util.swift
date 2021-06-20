@@ -65,28 +65,30 @@ func createAlert(vc: UIViewController, title: String, message: String){
  *UPLOAD PICTURE TO FIREBASE
  *@required: use user data to make path of pic upload
  */
-func uploadMediaTofirebase(mediaURL: String, messageID: String, userID: String, composeMediaFlag: MessageType, onCompletion: @escaping (_ downloadURL: URL) -> Void){
-    
+func uploadProfilePic(picData: Data, id: String, onCompletion: @escaping (_ downloadURL: URL) -> Void){
+    // File located on disk
+    var data = Data()
+    data.append(picData)
+
     // Create a reference to the file you want to upload
-    let riverRef = firebaseStorageRef.child(Constants.DEFAULT_STORAGE_PATH + "/" + userID + ".jpg")
-    
-    let url = URL(string: mediaURL)
-    // Start the video storage process
-    riverRef.putFile(from: url! as URL, metadata: nil, completion: { (metadata, error) in
-        if error == nil {
-            print("Successfully uploaded media")
-            riverRef.downloadURL { (url, error) in
-                guard let downloadURL = url else {
-                    // Uh-oh, an error occurred!
-                    return
-                }
-                onCompletion(downloadURL)
-                print("---UPLOAD COMPLETED---")
-            }
-        } else {
-            print(error?.localizedDescription)
+    let riversRef = firebaseStorageRef.child(Constants.DEFAULT_STORAGE_PATH + "/" + id + ".jpg")
+
+    _ = riversRef.putData(data, metadata: nil) { (metadata, error) in
+        guard let metadata = metadata else {
+            // Uh-oh, an error occurred!
+            return
         }
-    })
+        // Metadata contains file metadata such as size, content-type.
+        _ = metadata.size
+        // You can also access to download URL after upload.
+        riversRef.downloadURL { (url, error) in
+            guard let downloadURL = url else {
+              // Uh-oh, an error occurred!
+              return
+            }
+            onCompletion(downloadURL)
+        }
+    }
 }
 
 func downloadMediaFromFirebase(mediaURL: String, onCompletion: @escaping (_ downloadedMedia: Data) -> Void){
@@ -125,7 +127,7 @@ public func migratingRealmSchema(){
      
     // Tell Realm to use this new configuration object for the default Realm
     Realm.Configuration.defaultConfiguration = config
-     
+    
     // Now that we've told Realm how to handle the schema change, opening the file
     // will automatically perform the migration
     let realm = try! Realm()

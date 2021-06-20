@@ -34,7 +34,7 @@ class SignupViewController: UIViewController {
     
     //MARK:- objc Functions
     @objc func phoneButtonPressed(_ sender: UIButton!){
-        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OTPViewController") as? OTPViewController {
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "PhoneNumberViewContoller") as? PhoneNumberViewContoller {
 
             //add code for forward data passing here
 

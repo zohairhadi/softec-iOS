@@ -22,6 +22,28 @@ class Business: Codable {
     var isBusinessApproved: Bool = false
     var businessProfileType: String = BusinessProfileTypes.BASIC.rawValue
     
+    init(businessId: String, businessName: String, businessDescription: String, businessLogo: String, businessAddress: String, businessPhoneNumber: String, isBusinessApproved: Bool, businessProfileType: String) {
+        self.businessId = businessId
+        self.businessName = businessName
+        self.businessDescription = businessDescription
+        self.businessLogo = businessLogo
+        self.businessAddress = businessAddress
+        self.businessPhoneNumber = businessPhoneNumber
+        self.isBusinessApproved = isBusinessApproved
+        self.businessProfileType = businessProfileType
+    }
+    
+    init() {
+        self.businessId = ""
+        self.businessName = ""
+        self.businessDescription = ""
+        self.businessLogo = ""
+        self.businessAddress = ""
+        self.businessPhoneNumber = ""
+        self.isBusinessApproved = true
+        self.businessProfileType = ""
+    }
+    
 //    enum CodingKeys: String CodingKey {
 //        case familyGroupId = "familyGroupId"
 //        case familyName = "familyName"
@@ -68,3 +90,12 @@ class Business: Codable {
 //    }
 }
 
+class BusinessRegistrationRequest: Codable {
+    var business: Business = Business()
+    var fcmToken: String = ""
+    
+    init(bus: Business, email: String, fmc: String){
+        self.business = bus
+        self.fcmToken = fmc
+    }
+}

@@ -95,12 +95,22 @@ class OTPViewController: UIViewController{
         guard let verificationId = UserDefaults.standard.string(forKey: Constants.USER_DEFAULTS.VERIFICATION_ID) else {return}
         let credentials = PhoneAuthProvider.provider().credential(withVerificationID: verificationId, verificationCode: otp)
         
-        Auth.auth().signIn(with: credentials) { (success, error) in
-            if error == nil {
-                print("Success, User signed in...")
-                
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileTypeViewController") as? ProfileTypeViewController {
+
+            //add code for forward data passing here
+
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
             }
         }
+
+        
+//        Auth.auth().signIn(with: credentials) { (success, error) in
+//            if error == nil {
+//                print("Success, User signed in...")
+//
+//            }
+//        }
     }
     
     private func pushHomeScreenVC(isProfileRestored: Bool, user: AuthDataResult){

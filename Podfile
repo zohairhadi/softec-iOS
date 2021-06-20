@@ -25,5 +25,6 @@ target 'softec-app-2021' do
   pod 'Moya', '~> 14.0'
   pod 'RealmSwift', '~> 10.7.2'
   pod 'Stripe', '~> 21.4.0'
+  pod 'StripeTerminal', '1.4.0'
 
 end

@@ -49,23 +49,38 @@ class BusinessRegisterViewController: UIViewController {
 //        if errorText != "" {
 //            createAlert(vc: self, title: "Error", message: errorText)
 //        }
-
+        
+        let businessModel = BusinessDataModel()
+        let idd = "\(Int(NSDate().timeIntervalSince1970))"
+        
         if (screenView.nameTextField.hasText && screenView.numberTextField.hasText && screenView.addressTextField.hasText && screenView.businessTextField.hasText) {
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BusinessTabBarViewController") as? UITabBarController {
+//            showLoadingSpinner()
+//            uploadProfilePic(picData: screenView.profilePicImageView.image!.jpegData(compressionQuality: 0.1)!, id: idd) { [self] (durl) in
+//                businessModel.createBusiness(bus: BusinessRegistrationRequest(bus: Business(businessId: idd, businessName: screenView.nameTextField.text!, businessDescription: screenView.businessTextField.text!, businessLogo: durl.absoluteString, businessAddress: screenView.addressTextField.text!, businessPhoneNumber: screenView.numberTextField.text!, isBusinessApproved: false, businessProfileType: BusinessProfileTypes.BASIC.rawValue), email: "", fmc: UserDefaults.standard.string(forKey: "FCM_TOKEN")!), onCompletion: { (isCreated) in
+//                    if isCreated {
+//                        removeLoadingSpinner()
+            var busDB = BusinessDBHandler()
+            busDB.saveFamilyBusiness(newBusiness: Business(businessId: idd, businessName: screenView.nameTextField.text!, businessDescription: screenView.businessTextField.text!, businessLogo: "", businessAddress: screenView.addressTextField.text!, businessPhoneNumber: screenView.numberTextField.text!, isBusinessApproved: false, businessProfileType: BusinessProfileTypes.BASIC.rawValue), profilePic: "", pic: screenView.profilePicImageView.image!.jpegData(compressionQuality: 0.1)!)
+            
+                        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BusinessTabBarViewController") as? UITabBarController {
 
-                //add code for forward data passing here
-
-                if let navigator = navigationController {
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
+                            if let navigator = navigationController {
+                                navigator.pushViewController(viewController, animated: true)
+                            }
+                        }
+//                    } else {
+//                        print("Business not uploaded")
+//                    }
+//                    removeLoadingSpinner()
+//                })
         } else {
+//            showLoadingSpinner()
             createAlert(vc: self, title: "Error", message: "Please enter all entries correctly")
         }
     }
     
     //MARK:- Helper Functions
-    private func configureScreen(){
+    func configureScreen(){
 
         // configure screen
         screenView.configureScreen(view: self.view)
