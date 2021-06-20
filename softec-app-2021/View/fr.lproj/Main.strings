@@ -1,0 +1,27 @@
+
+/* Class = "UITabBarItem"; title = "Orders"; ObjectID = "03f-Qb-vNo"; */
+"03f-Qb-vNo.title" = "Orders";
+
+/* Class = "UITabBarItem"; title = "Feedback"; ObjectID = "4QI-hZ-CPK"; */
+"4QI-hZ-CPK.title" = "Feedback";
+
+/* Class = "UITabBarItem"; title = "Catalogue"; ObjectID = "UJb-c7-ns3"; */
+"UJb-c7-ns3.title" = "Catalogue";
+
+/* Class = "UITabBarItem"; title = "Cart"; ObjectID = "VWj-qL-4Os"; */
+"VWj-qL-4Os.title" = "Cart";
+
+/* Class = "UISegmentedControl"; WqV-Dc-qyf.segmentTitles[0] = "Current"; ObjectID = "WqV-Dc-qyf"; */
+"WqV-Dc-qyf.segmentTitles[0]" = "Current";
+
+/* Class = "UISegmentedControl"; WqV-Dc-qyf.segmentTitles[1] = "Previous"; ObjectID = "WqV-Dc-qyf"; */
+"WqV-Dc-qyf.segmentTitles[1]" = "Previous";
+
+/* Class = "UITabBarItem"; title = "Orders"; ObjectID = "ZHZ-1W-SuP"; */
+"ZHZ-1W-SuP.title" = "Orders";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "n9r-ZF-IF0"; */
+"n9r-ZF-IF0.title" = "Search";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "y5B-9e-Avf"; */
+"y5B-9e-Avf.title" = "Profile";

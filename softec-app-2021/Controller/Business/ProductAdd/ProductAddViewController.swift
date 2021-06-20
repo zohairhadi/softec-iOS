@@ -6,13 +6,13 @@
 //
 import UIKit
 
-class RegularRegisterViewController: UIViewController {
+class ProductAddViewController: UIViewController {
 
     //MARK:- Variables and Constants
     var pageController: UIPageViewController?
     var pages: [Pages] = Pages.allCases
     var currentIndex: Int = 0
-    var screenView = RegularRegisterView()
+    var screenView = ProductAddView()
     var validation = Validation()
 
     //MARK:- View Controller
@@ -49,15 +49,10 @@ class RegularRegisterViewController: UIViewController {
 //            createAlert(vc: self, title: "Error", message: errorText)
 //        }
 
-        if (screenView.nameTextField.hasText && screenView.numberTextField.hasText && screenView.addressTextField.hasText) {
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegularTabBarViewController") as? UITabBarController {
-
-                //add code for forward data passing here
-
-                if let navigator = navigationController {
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
+        if (screenView.nameTextField.hasText && screenView.descTextField.hasText && screenView.priceTextField.hasText) {
+            print("product added")
+            
+            
         } else {
             createAlert(vc: self, title: "Error", message: "Please enter all entries correctly")
         }
