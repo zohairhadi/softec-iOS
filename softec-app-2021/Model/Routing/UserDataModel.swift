@@ -15,7 +15,7 @@ class UserDataModel {
     var decodedUserData: User?
     
     //create family member user
-    func createUser(user: User, onCompletion: @escaping (_ isUserCreated: Bool) -> Void){
+    func createUser(user: UserRegistrationRequest, onCompletion: @escaping (_ isUserCreated: Bool) -> Void){
         moyaService.request(.postUser(user: user)) { (result) in
             switch result {
             case .success(let response):

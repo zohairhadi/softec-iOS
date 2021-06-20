@@ -15,7 +15,7 @@ class UserDBHandler {
     var user = RealmUser()
     
 
-    func saveUser(newFamilyMember: User, profilePic:String){
+    func saveUser(newFamilyMember: User, profilePic:String, pic: Data){
         user = RealmUser()
         
         user.userId = newFamilyMember.userId
@@ -23,6 +23,7 @@ class UserDBHandler {
         user.address = newFamilyMember.address
         user.phoneNumber = newFamilyMember.phoneNumber
         user.photoUri = profilePic
+        user.photo = pic
 
         //save member in elderly group
 //        self.selectedElderlyGroup.members.append(member)

@@ -82,11 +82,11 @@ class OTPStackView: UIStackView {
         textField.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         textField.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
         textField.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        textField.backgroundColor = UIColor(named: "CustomViewColor") ?? #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        textField.backgroundColor = #colorLiteral(red: 0.2616666257, green: 0.3021934032, blue: 0.8887682557, alpha: 1)
         textField.textAlignment = .center
         textField.adjustsFontSizeToFitWidth = false
         textField.font = UIFont(name: "Kefa", size: 50)
-        textField.textColor = .black
+        textField.textColor = .white
         textField.layer.cornerRadius = 10
         textField.layer.borderWidth = 2
         textField.layer.borderColor = inactiveFieldBorderColor.cgColor

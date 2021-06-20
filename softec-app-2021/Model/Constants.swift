@@ -154,13 +154,13 @@ enum Pages: CaseIterable {
     var descriptionLabel: String {
         switch self {
         case .pageZero:
-            return "Create a family group to talk with your loved ones."
+            return "Create connections thought your work"
         case .pageOne:
-            return "Add Family members and Caregivers."
+            return "Easily find people to work with"
         case .pageTwo:
-            return "Share daily moments across all generations."
+            return "Publisize your own business and flourish"
         case .pageThree:
-            return "Help your Elderly, right from your phone."
+            return "Become the best setting businessperson"
         }
     }
 

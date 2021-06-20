@@ -14,7 +14,6 @@ class BusinessDataModel {
     
     //create family member user
     func createBusiness(bus: BusinessRegistrationRequest, onCompletion: @escaping (_ isUserCreated: Bool) -> Void){
-        var decodedUserData: User?
         moyaService.request(.postBusiness(business: bus)) { (result) in
             switch result {
             case .success(let response):
@@ -35,7 +34,7 @@ class BusinessDataModel {
             var decodedUserData: Business?
             switch result {
             case .success(let response):
-                print("User entity: ",String(data: response.data, encoding: .utf8)!)
+                print("Business entity: ",String(data: response.data, encoding: .utf8)!)
                 // decode user response
                 do{
                     decodedUserData = try self.decoder.decode(Business.self, from: response.data)

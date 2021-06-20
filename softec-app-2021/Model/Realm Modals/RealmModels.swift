@@ -13,7 +13,9 @@ class RealmUser: Object {
     @objc dynamic var displayName: String = ""
     @objc dynamic var address: String = ""
     @objc dynamic var photoUri: String = ""
+    @objc dynamic var photo: Data = Data()
     @objc dynamic var phoneNumber: String = ""
+    
 }
 
 class RealmBusiness: Object {
@@ -21,6 +23,7 @@ class RealmBusiness: Object {
     @objc dynamic var businessName: String = ""
     @objc dynamic var businessDescription: String = ""
     @objc dynamic var businessLogo: String = ""
+    @objc dynamic var businessPic: Data = Data()
     @objc dynamic var businessAddress: String = ""
     @objc dynamic var businessPhoneNumber: String = ""
     @objc dynamic var isBusinessApproved: Bool = false

@@ -23,13 +23,6 @@ class RegularSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var temp = UserDataModel()
-        temp.createUser(user: User(userId: "1", displayName: "Masti", address: "mahool", photoUri: "aa", phoneNumber: "1")) { (isCreate) in
-            if isCreate {
-                print("created")
-            }
-        }
         
         configureScreen()
         configureMaps()
@@ -53,10 +46,10 @@ class RegularSearchViewController: UIViewController {
     }
     
     private func configureMaps(){
-        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.1, longitude: (locationMananger.location?.coordinate.longitude)! + 0.1))
-        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.2, longitude: (locationMananger.location?.coordinate.longitude)! + 0.2))
-        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.3, longitude: (locationMananger.location?.coordinate.longitude)! + 0.3))
-        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.4, longitude: (locationMananger.location?.coordinate.longitude)! + 0.4))
+//        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.1, longitude: (locationMananger.location?.coordinate.longitude)! + 0.1))
+//        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.2, longitude: (locationMananger.location?.coordinate.longitude)! + 0.2))
+//        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.3, longitude: (locationMananger.location?.coordinate.longitude)! + 0.3))
+//        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.4, longitude: (locationMananger.location?.coordinate.longitude)! + 0.4))
         
         screenView.googleMap.delegate = self
         locationMananger.delegate = self
@@ -90,6 +83,8 @@ class RegularSearchViewController: UIViewController {
     }
     
     func fetchNearbyPlaces() {
+//        businessLocations.append(CLLocationCoordinate2D(latitude: (locationMananger.location?.coordinate.latitude)! + 0.1, longitude: (locationMananger.location?.coordinate.longitude)! + 0.1))
+
         screenView.googleMap.clear()
         for loc in businessLocations {
             let marker = GMSMarker(position: loc)

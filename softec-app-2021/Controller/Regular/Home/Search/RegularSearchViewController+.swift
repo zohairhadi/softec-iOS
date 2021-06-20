@@ -16,7 +16,7 @@ extension RegularSearchViewController: CLLocationManagerDelegate {
         fetchNearbyPlaces()
 
         // add inital camera position
-        screenView.googleMap.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: locationMananger.location?.coordinate.latitude ?? 0.0, longitude: locationMananger.location?.coordinate.longitude ?? 0.0), zoom: 40, bearing: 0, viewingAngle: 0)
+        screenView.googleMap.camera = GMSCameraPosition(target: CLLocationCoordinate2D(latitude: locationMananger.location?.coordinate.latitude ?? 0.0, longitude: locationMananger.location?.coordinate.longitude ?? 0.0), zoom: 30, bearing: 0, viewingAngle: 0)
         
         // create marker
         let marker = GMSMarker()

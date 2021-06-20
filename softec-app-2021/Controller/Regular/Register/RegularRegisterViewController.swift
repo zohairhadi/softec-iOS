@@ -27,6 +27,8 @@ class RegularRegisterViewController: UIViewController {
     
     //MARK:- objc Functions
     @objc func nextButtonPressed(_ sender: UIButton!){
+        
+        
 //        var errorText = ""
 //        guard let name = screenView.nameTextField.text, let number = screenView.numberTextField.text, let address = screenView.addressTextField.text else{
 //            createAlert(vc: self, title: "Error", message: "Please enter all entries correctly")
@@ -51,15 +53,28 @@ class RegularRegisterViewController: UIViewController {
 //        }
 
         if (screenView.nameTextField.hasText && screenView.numberTextField.hasText && screenView.addressTextField.hasText) {
-            if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegularTabBarViewController") as? UITabBarController {
+            let userModel = UserDataModel()
+            let idd = "\(Int(NSDate().timeIntervalSince1970))"
 
-                //add code for forward data passing here
+            showLoadingSpinner()
+//            uploadProfilePic(picData: screenView.profilePicImageView.image!.jpegData(compressionQuality: 0.1)!, id: idd) { [self] (durl) in
+//                userModel.createUser(user: UserRegistrationRequest(user: User(userId: idd, displayName: self.screenView.nameTextField.text!, address: "", photoUri: durl.absoluteString, phoneNumber: self.screenView.numberTextField.text!), email: "", fmc: UserDefaults.standard.string(forKey: "FCM_TOKEN")!)) { (isCreated) in
+//                    if isCreated {
+//                        removeLoadingSpinner()
+//            var dataModel = UserDBHandler()
+//            dataModel.saveUser(newFamilyMember: User(userId: idd, displayName: self.screenView.nameTextField.text!, address: "", photoUri: "", phoneNumber: self.screenView.numberTextField.text!), profilePic: "", pic: screenView.profilePicImageView.image!.jpegData(compressionQuality: 0.1)!)
+                        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegularTabBarViewController") as? UITabBarController {
 
-                if let navigator = navigationController {
-                    navigator.pushViewController(viewController, animated: true)
-                }
-            }
+                            if let navigator = navigationController {
+                                navigator.pushViewController(viewController, animated: true)
+                            }
+                        }
+//                    }
+//                    removeLoadingSpinner()
+//                }
+//            }
         } else {
+//            removeLoadingSpinner()
             createAlert(vc: self, title: "Error", message: "Please enter all entries correctly")
         }
     }

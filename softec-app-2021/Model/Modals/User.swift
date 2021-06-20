@@ -21,4 +21,24 @@ class User:Codable {
         self.photoUri = photoUri
         self.phoneNumber = phoneNumber
     }
+    
+    init() {
+        self.userId = ""
+        self.displayName = ""
+        self.address = ""
+        self.photoUri = ""
+        self.phoneNumber = ""
+    }
+}
+
+class UserRegistrationRequest: Codable {
+    var user: User = User()
+    var email: String = ""
+    var fcmToken: String = ""
+    
+    init(user: User, email: String, fmc: String){
+        self.user = user
+        self.email = email
+        self.fcmToken = fmc
+    }
 }

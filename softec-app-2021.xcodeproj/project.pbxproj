@@ -20,6 +20,14 @@
 		A53024A2267ED27700976189 /* UserDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024A1267ED27700976189 /* UserDBHandler.swift */; };
 		A53024A7267ED44F00976189 /* BusinessDBHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024A6267ED44F00976189 /* BusinessDBHandler.swift */; };
 		A53024AB267ED7A000976189 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024AA267ED7A000976189 /* UserDataModel.swift */; };
+		A53024AF267EDFC800976189 /* BusinessDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024AE267EDFC800976189 /* BusinessDataModel.swift */; };
+		A53024B5267EE0C000976189 /* PhoneNumberViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024B4267EE0C000976189 /* PhoneNumberViewContoller.swift */; };
+		A53024C1267EECF800976189 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A53024C3267EECF800976189 /* Localizable.strings */; };
+		A53024C9267EEEE000976189 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024C8267EEEE000976189 /* CartViewController.swift */; };
+		A53024CD267EEF1E00976189 /* RegularCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024CC267EEF1E00976189 /* RegularCartView.swift */; };
+		A53024D0267EF51F00976189 /* StripeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024CF267EF51F00976189 /* StripeClient.swift */; };
+		A53024F4267EF73300976189 /* ReaderDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024F3267EF73300976189 /* ReaderDiscoveryViewController.swift */; };
+		A53024F7267F03C700976189 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53024F6267F03C700976189 /* CheckoutViewController.swift */; };
 		A53B877A267DE7C700D9E908 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B8779267DE7C700D9E908 /* util.swift */; };
 		A53B877D267DE88800D9E908 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B877C267DE88800D9E908 /* Constants.swift */; };
 		A53B87B1267E091100D9E908 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53B87B0267E091100D9E908 /* GoogleService-Info.plist */; };
@@ -84,6 +92,16 @@
 		A53024A1267ED27700976189 /* UserDBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDBHandler.swift; sourceTree = "<group>"; };
 		A53024A6267ED44F00976189 /* BusinessDBHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDBHandler.swift; sourceTree = "<group>"; };
 		A53024AA267ED7A000976189 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		A53024AE267EDFC800976189 /* BusinessDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDataModel.swift; sourceTree = "<group>"; };
+		A53024B4267EE0C000976189 /* PhoneNumberViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewContoller.swift; sourceTree = "<group>"; };
+		A53024BD267EEC0E00976189 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		A53024C2267EECF800976189 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A53024C5267EED0200976189 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A53024C8267EEEE000976189 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		A53024CC267EEF1E00976189 /* RegularCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularCartView.swift; sourceTree = "<group>"; };
+		A53024CF267EF51F00976189 /* StripeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeClient.swift; sourceTree = "<group>"; };
+		A53024F3267EF73300976189 /* ReaderDiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDiscoveryViewController.swift; sourceTree = "<group>"; };
+		A53024F6267F03C700976189 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		A53B8779267DE7C700D9E908 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		A53B877C267DE88800D9E908 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A53B87B0267E091100D9E908 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -194,9 +212,44 @@
 		A53024A9267ED78500976189 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
+				A53024AE267EDFC800976189 /* BusinessDataModel.swift */,
 				A53024AA267ED7A000976189 /* UserDataModel.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		A53024B2267EE0A200976189 /* Phone Signup */ = {
+			isa = PBXGroup;
+			children = (
+				A53024B3267EE0B100976189 /* Phone */,
+				A53B87F9267E287000D9E908 /* OTP */,
+			);
+			path = "Phone Signup";
+			sourceTree = "<group>";
+		};
+		A53024B3267EE0B100976189 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				A53024B4267EE0C000976189 /* PhoneNumberViewContoller.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
+		A53024C6267EEEBA00976189 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				A53024C8267EEEE000976189 /* CartViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		A53024C7267EEEBF00976189 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A5302489267EAD0000976189 /* RegularSearchViewController.swift */,
+				A530248F267EADCF00976189 /* RegularSearchViewController+.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		A53B87DD267E10A100D9E908 /* Extensions */ = {
@@ -260,6 +313,7 @@
 				A53B880C267E2E2600D9E908 /* RegularRegisterView.swift */,
 				A53B882C267E423800D9E908 /* RegularHomeView.swift */,
 				A530248C267EAD2400976189 /* RegularSearchView.swift */,
+				A53024CC267EEF1E00976189 /* RegularCartView.swift */,
 			);
 			path = Regular;
 			sourceTree = "<group>";
@@ -291,6 +345,7 @@
 			children = (
 				A53B8808267E2E0A00D9E908 /* RegularRegisterViewController.swift */,
 				A53B8810267E35F500D9E908 /* RegularRegisterViewController+.swift */,
+				A53024F3267EF73300976189 /* ReaderDiscoveryViewController.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -298,8 +353,8 @@
 		A53B8834267E42AC00D9E908 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A5302489267EAD0000976189 /* RegularSearchViewController.swift */,
-				A530248F267EADCF00976189 /* RegularSearchViewController+.swift */,
+				A53024C7267EEEBF00976189 /* Search */,
+				A53024C6267EEEBA00976189 /* Order */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -352,6 +407,7 @@
 				A5816DA6267DD7EF00FE3A33 /* Info.plist */,
 				A53B87B0267E091100D9E908 /* GoogleService-Info.plist */,
 				A5816DA1267DD7EF00FE3A33 /* Assets.xcassets */,
+				A53024C3267EECF800976189 /* Localizable.strings */,
 			);
 			path = "softec-app-2021";
 			sourceTree = "<group>";
@@ -373,9 +429,10 @@
 			children = (
 				A53B87E3267E131500D9E908 /* Signup */,
 				A53B87F4267E238E00D9E908 /* ProfileType */,
-				A53B87F9267E287000D9E908 /* OTP */,
+				A53024B2267EE0A200976189 /* Phone Signup */,
 				A53B8807267E2DE700D9E908 /* Regular */,
 				A53B881B267E412100D9E908 /* Business */,
+				A53024F6267F03C700976189 /* CheckoutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -393,6 +450,7 @@
 				A53B8813267E397A00D9E908 /* Validation.swift */,
 				A5302495267EB5B100976189 /* PlaceMarker.swift */,
 				A53B8816267E3FE300D9E908 /* ModelEnum.swift */,
+				A53024CF267EF51F00976189 /* StripeClient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -542,6 +600,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = A5816D8C267DD7ED00FE3A33;
 			productRefGroup = A5816D96267DD7ED00FE3A33 /* Products */;
@@ -563,6 +622,7 @@
 				A5C4EA59267E68C80028F115 /* ProductCollectionViewCell.xib in Resources */,
 				A5C4EA64267E7A340028F115 /* FeedbackTableViewCell.xib in Resources */,
 				A5816DA2267DD7EF00FE3A33 /* Assets.xcassets in Resources */,
+				A53024C1267EECF800976189 /* Localizable.strings in Resources */,
 				A5816DA0267DD7ED00FE3A33 /* Main.storyboard in Resources */,
 				A5C4EA84267E837B0028F115 /* OrderListTableViewCell.xib in Resources */,
 				A5C4EA8D267E86DA0028F115 /* OrderListCollectionViewCell.xib in Resources */,
@@ -636,12 +696,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53024F7267F03C700976189 /* CheckoutViewController.swift in Sources */,
 				A530249E267ED0A300976189 /* RealmModels.swift in Sources */,
 				A5302486267EA20A00976189 /* ProductAddViewController+.swift in Sources */,
 				A53B882D267E423800D9E908 /* RegularHomeView.swift in Sources */,
+				A53024C9267EEEE000976189 /* CartViewController.swift in Sources */,
 				A53B8811267E35F500D9E908 /* RegularRegisterViewController+.swift in Sources */,
 				A53B881D267E417D00D9E908 /* BusinessRegisterViewController.swift in Sources */,
 				A53B8817267E3FE300D9E908 /* ModelEnum.swift in Sources */,
+				A53024CD267EEF1E00976189 /* RegularCartView.swift in Sources */,
 				A5C4EA5D267E69C80028F115 /* BusinessCatalogViewController+.swift in Sources */,
 				A53B877D267DE88800D9E908 /* Constants.swift in Sources */,
 				A530248D267EAD2400976189 /* RegularSearchView.swift in Sources */,
@@ -649,6 +712,7 @@
 				A5C4EA83267E837B0028F115 /* OrderListTableViewCell.swift in Sources */,
 				A5C4EA4F267E67410028F115 /* CategoryCollectionViewCell.swift in Sources */,
 				A53B8809267E2E0A00D9E908 /* RegularRegisterViewController.swift in Sources */,
+				A53024AF267EDFC800976189 /* BusinessDataModel.swift in Sources */,
 				A5816D9D267DD7ED00FE3A33 /* SignupViewController.swift in Sources */,
 				A53B87FB267E287C00D9E908 /* OTPViewController.swift in Sources */,
 				A5C4EA77267E81510028F115 /* OrderListViewController.swift in Sources */,
@@ -657,6 +721,7 @@
 				A5C4EA8C267E86DA0028F115 /* OrderListCollectionViewCell.swift in Sources */,
 				A530248A267EAD0000976189 /* RegularSearchViewController.swift in Sources */,
 				A53B882A267E41F300D9E908 /* BusinessRegisterViewController+.swift in Sources */,
+				A53024F4267EF73300976189 /* ReaderDiscoveryViewController.swift in Sources */,
 				A53B880D267E2E2600D9E908 /* RegularRegisterView.swift in Sources */,
 				A53B883B267E42E200D9E908 /* BusinessCatalogViewController.swift in Sources */,
 				A53024A7267ED44F00976189 /* BusinessDBHandler.swift in Sources */,
@@ -672,9 +737,11 @@
 				A53B87B5267E094600D9E908 /* Business.swift in Sources */,
 				A5C4EA7E267E82260028F115 /* OrderListView.swift in Sources */,
 				A53024A2267ED27700976189 /* UserDBHandler.swift in Sources */,
+				A53024B5267EE0C000976189 /* PhoneNumberViewContoller.swift in Sources */,
 				A53B87FF267E28D800D9E908 /* UIStackView+.swift in Sources */,
 				A5C4EA73267E7DEB0028F115 /* FeedbackViewController+.swift in Sources */,
 				A5816D9B267DD7ED00FE3A33 /* SceneDelegate.swift in Sources */,
+				A53024D0267EF51F00976189 /* StripeClient.swift in Sources */,
 				A5C4EA58267E68C80028F115 /* ProductCollectionViewCell.swift in Sources */,
 				A53B87E5267E132A00D9E908 /* PageVC.swift in Sources */,
 				A53B877A267DE7C700D9E908 /* util.swift in Sources */,
@@ -692,10 +759,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A53024C3267EECF800976189 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A53024C2267EECF800976189 /* en */,
+				A53024C5267EED0200976189 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A5816D9E267DD7ED00FE3A33 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A5816D9F267DD7ED00FE3A33 /* Base */,
+				A53024BD267EEC0E00976189 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -715,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -776,6 +854,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
